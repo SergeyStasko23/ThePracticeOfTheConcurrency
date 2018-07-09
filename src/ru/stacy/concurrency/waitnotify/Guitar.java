@@ -22,9 +22,7 @@ class Guitar {
 
     synchronized void waitForPlaying() throws InterruptedException {
         while(tuneOn) {
-            wait();                 // приостановление вызывающей задачи и освобождение блокировки
+            wait();            // приостановление вызывающей задачи и освобождение блокировки
         }
     }
-
-
 }
